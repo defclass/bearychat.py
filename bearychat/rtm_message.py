@@ -65,7 +65,7 @@ class RTMMessage(object):
             data['to_uid'] = self['uid']
         else:
             data['type'] = RTMMessageType.ChannelMessage
-            data['channel_id'] = self['channel_id']
+            data['vchannel_id'] = self['vchannel_id']
         return RTMMessage(data)
 
     def refer(self, text):
